@@ -344,7 +344,7 @@ export default function Home() {
               const random1 = randomColour();
               const random2 = randomColour();
               return (
-                <li>
+                <li key={index}>
                   <svg
                     onClick={() => setIsShownInfo(true)}
                     width="19"
