@@ -23,6 +23,11 @@
     }
   }
 
+  .list {
+    list-style: none;
+    background-color: #07a189;
+  }
+
   div {
     display: flex;
     align-items: center;
@@ -434,12 +439,12 @@
         outline: 1px solid #07a189;
         background-color: transparent;
         color: #e6fefa;
-        font-size: 0.8vw;
+        font-size: 1vw;
         margin: 0 0.5vw;
         border: none;
         color: gray;
         border-radius: 0.5vw;
-        padding: 0.8vw 1vw;
+        padding: 0.5vw 0.8vw;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         &:hover {
@@ -529,12 +534,66 @@
 
 @media only screen and (max-width: 600px) {
   .footer {
-    display: none;
+    // display: none;
+    display: flex;
+    flex-wrap: wrap;
+    ul {
+      width: 50vw;
+      padding: 3vw;
+      list-style: none;
+      font-size: 1vw;
+
+      li {
+        font-size: 4.1vw;
+        padding: 0.5vw;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: #07a189;
+        }
+      }
+      address {
+        font-style: normal;
+        font-size: 4.2vw;
+        color: #1d201f;
+      }
+
+      svg {
+        width: 8vw;
+        height: 8vw;
+        margin: 1vw 0;
+        margin-right: 5vw;
+      }
+      b {
+        font-weight: 600;
+        color: #1d201f;
+        font-size: 4.4vw;
+      }
+      button {
+        background-color: #07a189;
+
+        color: #e6fefa;
+        font-size: 4.2vw;
+        margin-bottom: 1vw;
+        font-weight: 600;
+        padding: 3vw 6vw;
+        border: none;
+        border-radius: 0.5vw;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
   }
 
   .main {
+    margin: 0;
+    padding: 0;
     position: relative;
-    background-color: #e6fefa;
+    background-color: #f6f6f6;
+
     height: max-content;
 
     .top {
@@ -555,7 +614,7 @@
         position: absolute;
         top: 2vw;
         left: 2vw;
-        font-size: 4vw;
+        font-size: 5vw;
         font-weight: 600;
         color: #e6fefa;
       }
@@ -568,41 +627,46 @@
         // margin:0 auto;
         input {
           width: 70vw;
-          background-color: #e6fefa;
-          border-radius: 0.5vw;
-          padding: 1vw;
+          background-color: #ffff;
+          border-radius: 2vw;
+          padding: 2vw;
           padding-right: 3vw;
           font-size: 3vw;
-          height: 7vw;
-          font-weight: 400;
+          height: 10vw;
+          margin-top: 5vw;
           color: #1d201f;
           outline: none;
 
           border: none;
           transition: all 0.5s ease;
+          font-weight: 500;
           &:focus {
             border: none;
             outline: 1px solid #e6fefa;
           }
         }
         button {
+          margin-top: 5vw;
+
           background-color: #1d201f;
           color: #e6fefa;
           font-size: 1.2vw;
           font-weight: 600;
-          padding: 0.3vw 2vw;
+          padding: 0.3vw 3.5vw;
           margin-left: 3.5vw;
           cursor: pointer;
           border: none;
           // letter-spacing: 0.4vw;
           display: flex;
-          border-radius: 1vw;
+          border-radius: 2vw;
 
           align-items: center;
           transition: all 0.2s ease-in-out;
           color: #e6fefa;
           box-shadow: -0.1vw 0 0 0px #1d201f;
           outline: none;
+          height: 10vw;
+
           &:hover {
             color: #1d201f;
             box-shadow: 0px 0 0 0px #1d201f;
@@ -621,23 +685,25 @@
     }
     .middle {
       position: relative;
-      margin: 5vw 0;
+      // margin: 5vw 0;
       margin-top: 0vw;
       border-radius: 0.5vw;
-      padding: 1vw;
+      // padding: 1vw;
+      box-shadow: none;
       background-color: #f6f6f6;
+      margin: 0 -1vw;
 
       h4 {
         margin: 2vw 0;
-        padding: 2vw;
+        padding: 2vw 4vw;
         border: 0.5vw solid #1d201f;
         text-align: end;
-        margin-left: 70vw;
+        margin-left: 75vw;
         border-radius: 1vw;
         align-items: end;
         font-size: 3.5vw;
         width: max-content;
-        font-weight: 400;
+        font-weight: 600;
         color: #1d201f;
         display: flex;
         align-items: center;
@@ -668,10 +734,11 @@
         display: block;
         font-size: 3vw;
         color: #1d201f;
+        width: 100vw;
 
         li {
           margin: 2vw;
-          padding: 2vw;
+          padding: 2.5vw 2vw;
           background-color: #ffffff;
           display: flex;
           border-radius: 1vw;
@@ -681,10 +748,17 @@
           svg {
             padding: 4vw;
             width: 15vw;
+            margin-right: 3vw;
+            border-radius: 2vw;
             height: 15vw;
             path {
               fill: currentColor;
             }
+          }
+
+          .content {
+            height: 1vw;
+            background-color: transparent;
           }
           div {
             width: 40vw;
@@ -700,15 +774,19 @@
             span {
               font-size: 3vw;
               margin-right: 6vw;
+              color: rgb(170, 170, 170);
 
               &:nth-last-child(1) {
-                margin: 5vw 0;
-                padding: 0.5vw 1vw;
+                // margin: 5vw 0;
+                font-size: 3.5vw;
+                font-weight: 500;
+                border-radius: 1vw;
+                padding: 1vw 2vw;
               }
             }
             b {
               font-size: 3vw;
-              width: max-content;
+              max-width: 5vw;
               // background-color: #07a189;
               margin-right: 3vw;
             }
@@ -720,27 +798,29 @@
               margin: 0;
             }
             p {
-              margin-top: 5vw;
-              color: gray;
+              text-align: center;
+              margin-top: 2vw;
+              color: rgb(170, 170, 170);
               font-size: 4vw;
             }
+
             button {
               border: none;
               display: flex;
               align-items: center;
               width: 30vw;
-              margin-top: 2vw;
+              margin-top: 0vw;
               background-color: #1d201f;
               border-radius: 1.5vw;
               font-size: 3.2vw;
-              padding: 1vw;
+              padding: 0.5vw 1vw;
               svg {
                 margin: 0 1vw;
                 // background-color: #07a189;
-                width: 8vw;
+                width: 7vw;
                 padding: 0.5vw;
                 border-radius: 0.2vw;
-                height: 8vw;
+                height: 7vw;
                 fill: #1d201f;
                 path {
                   fill: currentColor;
