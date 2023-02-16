@@ -116,8 +116,9 @@ export default function Home() {
             </svg>
           </button>
         </div>
-        <h5>Search Project</h5>
         <h5>Post Project</h5>
+        <h5>Search Project</h5>
+
         <Image
           className={styles.logo}
           src="/images/message.svg"
@@ -147,7 +148,7 @@ export default function Home() {
             height={1080}
             priority
           />
-          <h1>Find Your Next Project</h1>
+          <h1>Search Project</h1>
           <div>
             <input type="text" placeholder="Search your project" />
             <button>
@@ -195,7 +196,7 @@ export default function Home() {
               </select>
             </div>
             <div>
-              <label for="">Category</label>
+              <label for="">Sub-Category</label>
               <select name="" id="">
                 <option value="">All</option>
                 <option value="">All</option>
@@ -205,7 +206,7 @@ export default function Home() {
               </select>
             </div>
             <div>
-              <label for="">Category</label>
+              <label for="">Delivery Time</label>
               <select name="" id="">
                 <option value="">All</option>
                 <option value="">All</option>
@@ -215,7 +216,7 @@ export default function Home() {
               </select>
             </div>
             <div>
-              <label for="">Category</label>
+              <label for="">Post Day</label>
               <select name="" id="">
                 <option value="">All</option>
                 <option value="">All</option>
@@ -225,7 +226,7 @@ export default function Home() {
               </select>
             </div>
             <div>
-              <label for="">Category</label>
+              <label for="">Pricing</label>
               <select name="" id="">
                 <option value="">All</option>
                 <option value="">All</option>
@@ -234,16 +235,7 @@ export default function Home() {
                 <option value="">All</option>
               </select>
             </div>
-            <div>
-              <label for="">Category</label>
-              <select name="" id="">
-                <option value="">All</option>
-                <option value="">All</option>
-                <option value="">All</option>
-                <option value="">All</option>
-                <option value="">All</option>
-              </select>
-            </div>
+
             <div>
               <span>Clear Filter</span>
             </div>
@@ -441,7 +433,13 @@ export default function Home() {
             <button>Logo</button>
           </li>
           <li>
-            <address>1901 Thornridge Cir. Shiloh, Hawaii 81063</address>
+            <address>
+              1901 Thornridge Cir.
+              <br />
+              Shiloh, Hawaii
+              <br />
+              81063
+            </address>
           </li>
         </ul>
         <ul>
