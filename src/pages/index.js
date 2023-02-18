@@ -205,7 +205,7 @@ export default function Home() {
           <div className={styles.filter}>
             <div>
               <label for="">Category</label>
-              <select name="" id="">
+              <select name="" id="" placeholder="Category" defaultValue="yooo">
                 <option value="">All</option>
                 <option value="">All</option>
                 <option value="">All</option>
