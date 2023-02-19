@@ -206,6 +206,9 @@ export default function Home() {
             <div>
               <label for="">Category</label>
               <select name="" id="" placeholder="Category" defaultValue="yooo">
+                <option value="" disabled selected>
+                  Category
+                </option>
                 <option value="">All</option>
                 <option value="">All</option>
                 <option value="">All</option>
@@ -216,6 +219,9 @@ export default function Home() {
             <div>
               <label for="">Sub-Category</label>
               <select name="" id="">
+                <option value="" disabled selected>
+                  Sub-Category
+                </option>
                 <option value="">All</option>
                 <option value="">All</option>
                 <option value="">All</option>
@@ -226,6 +232,9 @@ export default function Home() {
             <div>
               <label for="">Delivery Time</label>
               <select name="" id="">
+                <option value="" disabled selected>
+                  Delivery Time
+                </option>
                 <option value="">All</option>
                 <option value="">All</option>
                 <option value="">All</option>
@@ -236,6 +245,9 @@ export default function Home() {
             <div>
               <label for="">Post Day</label>
               <select name="" id="">
+                <option value="" disabled selected>
+                  Post Day
+                </option>
                 <option value="">All</option>
                 <option value="">All</option>
                 <option value="">All</option>
@@ -246,6 +258,9 @@ export default function Home() {
             <div>
               <label for="">Pricing</label>
               <select name="" id="">
+                <option value="" disabled selected>
+                  Pricing
+                </option>
                 <option value="">All</option>
                 <option value="">All</option>
                 <option value="">All</option>
