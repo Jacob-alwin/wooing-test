@@ -133,7 +133,7 @@
 .main {
   position: relative;
   background-color: #e6fefa;
-  min-height: 150vw;
+  min-height: 160vw;
 
   .top {
     height: 20vw;
@@ -333,7 +333,7 @@
         tr {
           th {
             text-align: center;
-            font-size: 1.3vw;
+            font-size: 1.5vw;
             font-weight: 600;
             color: #07a189;
           }
@@ -436,6 +436,8 @@
       padding-bottom: 2vw;
       text-align: center;
       justify-content: center;
+      padding-bottom: 5%;
+
       button {
         outline: 1px solid #07a189;
         background-color: transparent;
