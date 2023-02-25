@@ -44,7 +44,7 @@
       font-size: 1.2vw;
       font-weight: 400;
       border: none;
-      color: #1d201f;
+      color: #07c787;
       transition: all 0.2s ease;
       &:focus {
         border: none;
@@ -74,7 +74,7 @@
     height: 3vw;
     margin-right: 2vw;
     border-radius: 0.5vw;
-    background-color: #07a18aa8;
+    background-color: #18ad97a8;
     position: relative;
     &::after {
       color: #1d201f;
@@ -94,7 +94,7 @@
 
   h5 {
     font-size: 1.2vw;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     padding: 0;
     color: #1d201f;
@@ -106,8 +106,8 @@
   }
 
   img {
-    width: 3vw;
-    height: 3vw;
+    width: 2.5vw;
+    height: 2.5vw;
     position: relative;
     transform: rotate(0deg);
     cursor: pointer;
@@ -116,7 +116,7 @@
     &::before {
       position: absolute;
       content: " ";
-      color: #07a189;
+      color: #15d4b8;
       z-index: 10;
       top: 0;
       left: 0;
@@ -189,19 +189,19 @@
         color: #e6fefa;
         font-size: 1.2vw;
         font-weight: 600;
-        padding: 0.3vw 1vw;
+        padding: 0.1vw 1vw;
         margin-left: -4.5vw;
         cursor: pointer;
         border: none;
         // letter-spacing: 0.4vw;
         display: flex;
-
         align-items: center;
         background-color: transparent;
         transition: all 0.2s ease-in-out;
         color: #1d201f;
         box-shadow: -0.1vw 0 0 0px #1d201f;
         outline: none;
+
         &:hover {
           color: #1d201f;
           box-shadow: 0px 0 0 0px #1d201f;
@@ -257,14 +257,14 @@
         // background-color: #07a189;
         label {
           font-size: 1.1vw;
-          font-weight: 600;
+          font-weight: 700;
           color: #1d201f;
         }
 
         select {
           margin-top: 0.5vw;
           background-color: transparent;
-          border: 0.01vw solid rgb(221, 221, 221);
+          border: 0.01vw solid rgb(173, 173, 173);
           width: 15vw;
           outline: none;
           margin-right: 3vw;
@@ -279,10 +279,12 @@
           &::appearance {
             background-color: red;
           }
+
           &:focus {
             border: 0.1vw solid #f6f6f6;
           }
-          &::placeholder{
+
+          &::placeholder {
             color: #b8b8b8;
           }
         }
@@ -290,7 +292,6 @@
         option {
           font-size: 1.5vw;
           font-weight: 600;
-
 
           &:disabled {
             color: #c0c0c0;
@@ -310,7 +311,7 @@
           font-size: 1.2vw;
           border: none;
           border-radius: 0.5vw;
-          padding: 1vw 2vw;
+          padding: 0.8vw 2vw;
           cursor: pointer;
           transition: all 0.2s ease-in-out;
           &:hover {
@@ -335,8 +336,7 @@
       // border: 1px solid #ddd;
       thead {
         height: 5vw;
-        box-shadow: 0px 0.1vw 0px 0px rgb(218, 218, 218),
-          0px -0.1vw 0px 0px rgb(219, 219, 219);
+        box-shadow: 0px -0.1vw 0px 0px rgb(219, 219, 219);
         tr {
           th {
             text-align: center;
@@ -357,7 +357,7 @@
             min-height: 1vw;
             padding: 0.5vw 0;
             width: 15vw;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 1vw;
             margin: 0;
             color: #1d201f;
@@ -376,10 +376,10 @@
               svg {
                 margin: 0 1vw;
                 background-color: #07a189;
-                width: 3vw;
-                padding: 0.5vw;
+                width: 2vw;
+                padding: 0.4vw;
                 border-radius: 0.2vw;
-                // height: 3vw;
+                height: 2vw;
                 fill: #1d201f;
                 path {
                   fill: currentColor;
@@ -548,10 +548,12 @@
 @media only screen and (max-width: 600px) {
   .footer {
     // display: none;
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     ul {
-      width: 50vw;
+      width: 45vw;
       padding: 3vw;
       list-style: none;
       font-size: 1vw;
@@ -577,21 +579,22 @@
         margin: 1vw 0;
         margin-right: 5vw;
       }
+
       b {
         font-weight: 600;
         color: #1d201f;
         font-size: 4.4vw;
       }
+
       button {
         background-color: #07a189;
-
         color: #e6fefa;
         font-size: 4.2vw;
         margin-bottom: 1vw;
         font-weight: 600;
         padding: 3vw 6vw;
         border: none;
-        border-radius: 0.5vw;
+        border-radius: 1.5vw;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         &:hover {

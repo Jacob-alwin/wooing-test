@@ -333,8 +333,8 @@ export default function Home() {
                     <td>
                       <span
                         style={{
-                          backgroundColor: random2.light,
-                          color: random2.dark,
+                          backgroundColor: random1.light,
+                          color: random1.dark,
                         }}
                       >
                         {item.deliveryTime}
